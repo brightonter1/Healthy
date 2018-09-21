@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "223428070678",
+    "firebase_url": "https://healthy-80171.firebaseio.com",
+    "project_id": "healthy-80171",
+    "storage_bucket": "healthy-80171.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:223428070678:android:a81a742a64261bad",
+        "android_client_info": {
+          "package_name": "com.example.a59070035.healthy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "223428070678-2n7kbro4j0qplqk166i2ok95jqqmg1n1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7b1cVhta99MNoPL2r8u6ds534mf6Ot_s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
