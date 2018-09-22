@@ -75,18 +75,15 @@ public class WeightFragment extends Fragment {
     public ArrayList<Weight> checkUpDown(ArrayList<Weight> _weights){
 
         int count = _weights.size()-1;
-        for (int i = 0 ; i < count ; i++){
-
-            if (i==0){
-                _weights.get(i).setStatus("");
+        for (int i = count ; i > 0 ; i--){
+            if(_weights.get(i).getWeight() < _weights.get(i-1).getWeight()){
+                _weights.get(i-1).setStatus("UP");
+            }else if(_weights.get(i).getWeight() > _weights.get(i-1).getWeight()){
+                _weights.get(i-1).setStatus("DOWN");
+            }else if(_weights.get(i).getWeight() == _weights.get(i-1).getWeight()){
+                _weights.get(i-1).setStatus("");
             }
-            if(_weights.get(i).getWeight() < _weights.get(i+1).getWeight()){
-                _weights.get(i+1).setStatus("UP");
-            }else if(_weights.get(i).getWeight() > _weights.get(i+1).getWeight()){
-                _weights.get(i+1).setStatus("DOWN");
-            }else if(_weights.get(i).getWeight() == _weights.get(i+1).getWeight()){
-                _weights.get(i+1).setStatus("");
-            }
+            Log.d("System",_weights.get(i).getWeight() +" : " +_weights.get(i-1).getWeight());
         }
 
         return _weights;

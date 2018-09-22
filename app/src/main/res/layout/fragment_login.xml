@@ -24,7 +24,7 @@
         android:drawableLeft="@drawable/ic_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="numberPassword"
+        android:inputType="textPassword"
         android:hint="password"
         android:id="@+id/login_password" />
     <Button

@@ -59,9 +59,9 @@ public class Weight{
                 SimpleDateFormat format = new SimpleDateFormat("dd MMM yyyy");
                 Date date1 = format.parse(str1);
                 Date date2 = format.parse(str2);
-                if (date1.compareTo(date2) > 0){
+                if (date2.compareTo(date1) > 0){
                     return 1;
-                }else if (date1.compareTo(date2) < 0){
+                }else if (date2.compareTo(date1) < 0){
                     return -1;
                 }else
                     return 0;
