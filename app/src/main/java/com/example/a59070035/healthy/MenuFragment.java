@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.example.a59070035.healthy.sleep.SleepFragment;
 import com.example.a59070035.healthy.weight.WeightFragment;
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -22,7 +23,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class MenuFragment extends Fragment {
     FirebaseAuth mAuth;
-    String[] list = {"BMI", "WEIGHT", "SIGN OUT"};
+    String[] list = {"BMI", "WEIGHT", "Sleep","SIGN OUT"};
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -66,6 +67,12 @@ public class MenuFragment extends Fragment {
                             .commit();
                     Log.d("System", "[Menu] Go to Logout");
                     Toast.makeText(getActivity(), "Sign out complete", Toast.LENGTH_SHORT).show();
+                }else if (_menuAdapter.getItem(position).equals("Sleep")){
+                    getActivity().getSupportFragmentManager()
+                            .beginTransaction()
+                            .replace(R.id.main_view, new SleepFragment())
+                            .addToBackStack(null)
+                            .commit();
                 }
             }
         });
