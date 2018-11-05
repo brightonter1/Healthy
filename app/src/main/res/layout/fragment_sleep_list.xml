@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/sleep_list_top"
+        android:hint="19-Jan-18"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="300dp"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:layout_marginTop="-15dp"
+        android:paddingRight="20dp"
+        android:hint="07:30"
+        android:textSize="30dp"
+        android:id="@+id/sleep_list_right"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="-25dp"
+        android:hint="22:00 - 05:30"
+        android:id="@+id/sleep_list_bot"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_width="300dp"
+        android:layout_height="40dp" />
+</LinearLayout>

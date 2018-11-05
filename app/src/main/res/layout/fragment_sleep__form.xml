@@ -23,7 +23,7 @@
         />
     <EditText
         android:id="@+id/sleep_form_timeToSleep"
-        android:hint="เวลาเข้านอน"
+        android:hint="เวลาเข้านอน ex. 21:20"
         android:layout_marginTop="15dp"
         android:layout_gravity="center"
         android:layout_width="240dp"
@@ -31,13 +31,13 @@
 
     <EditText
         android:id="@+id/sleep_form_timeToWakeUp"
-        android:hint="เวลาตื่น"
+        android:hint="เวลาตื่น ex. 07:30"
         android:layout_marginTop="15dp"
         android:layout_gravity="center"
         android:layout_width="240dp"
         android:layout_height="50dp" />
     <Button
-        android:id="@+id/weight_form_saveBtn"
+        android:id="@+id/sleeP_form_addBtn"
         android:hint="Save"
         android:layout_marginTop="25dp"
         android:layout_gravity="center"
