@@ -41,6 +41,17 @@ public class LoginFragment extends Fragment {
         Log.d("System","[Login]"+ mAuth.toString());
         initLoginBtn();
         initRegister();
+        currentUser();
+    }
+
+    public void currentUser(){
+        if (mAuth.getCurrentUser() != null){
+            getActivity().getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.main_view, new MenuFragment())
+                    .addToBackStack(null)
+                    .commit();
+        }
     }
     public void initRegister(){
         TextView _regisBtn = (TextView) getView().findViewById(R.id.login_register);

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".post.SubPostFragment">
+
+    <TextView
+        android:id="@+id/sub_post_id"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:text="1:"
+        android:textSize="25dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+    <TextView
+        android:id="@+id/sub_post_title"
+        android:layout_marginTop="-40dp"
+        android:layout_marginLeft="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="sunt aut facer repellat"
+        android:textSize="25dp" />
+    <TextView
+        android:id="@+id/sub_post_body"
+        android:text="quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>
